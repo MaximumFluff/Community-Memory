@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display");
+
+body {
+  text-align: center;
+  font-family: "Major Mono Display", monospace;
+  background-color: #e0ced7;
+  /* margin: 0 auto; */
+}
+
+#cards {
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  width: 80vw;
+  justify-content: center;
+  align-content: center;
+}
+
+.card {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: auto;
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  font-size: 1.5rem;
+}
+
+.card a {
+  margin: 24px;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 2px 2px gray;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 2vh;
+  width: 100vw;
+}
