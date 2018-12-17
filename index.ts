@@ -9,7 +9,12 @@ interface Event {
 document.addEventListener(
   "DOMContentLoaded",
   function() {
+    console.time("JSONLoad");
     generateCards(data);
+    console.log("%c Time to load", "color: gray; font-weight: bold;");
+    console.timeEnd("JSONLoad");
+    console.log("%c JSON Data", "color: orange; font-weight: bold;");
+    console.table(data);
   },
   false
 );
@@ -26,5 +31,4 @@ function generateCards(data: Event[]) {
     }" target="_blank">Read more</a>`;
     ref.appendChild(newDiv);
   }
-  console.log(data);
 }
