@@ -4,7 +4,6 @@ body {
   text-align: center;
   font-family: "Major Mono Display", monospace;
   background-color: #e0ced7;
-  /* margin: 0 auto; */
 }
 
 #cards {
@@ -56,6 +55,9 @@ footer {
   justify-content: center;
 }
 
+a {
+  color: black;
+}
 /*
 Color animation for cards from this link:
 https://stackoverflow.com/questions/17212094/fill-background-color-left-to-right-css

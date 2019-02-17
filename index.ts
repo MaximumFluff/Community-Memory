@@ -48,7 +48,7 @@ function timer(divId: any, date: string) {
   const seconds = Math.floor((difference % (1000 * 60)) / 1000);
   const timeString =
     days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-  if (0 > difference) {
+  if (difference < 0) {
     const timeString = "Ended";
   }
   // Attach to divId
